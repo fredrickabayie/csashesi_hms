@@ -1,16 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Hms\Http\Controllers;
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
+use Hms\Http\Requests;
 
 class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
      *
-     * @return void
      */
     public function __construct()
     {
