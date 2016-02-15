@@ -4,7 +4,7 @@
 
         <!-- Login Form -->
 <div class="lc-block toggled" id="l-login">
-    <div class="lcb-float"><i class="zmdi zmdi-pin-account"></i></div>
+    <div class="lcb-float"><i class="zmdi zmdi-pin-account c-blue"></i></div>
 
     {!! Form::open(['url' => '/login', 'method' => 'post']) !!}
 
@@ -50,7 +50,7 @@
     {!! Form::close() !!}
 
     <ul class="login-navigation">
-        <li href="{{ url('/password/reset') }}" data-block="#l-forget-password" class="bg-red">Forgot Your Password?
+        <li href="{{ url('/password/reset') }}" data-block="#l-forget-password" class="bg-red animated zoomInUp">Forgot Your Password?
         </li>
     </ul>
 

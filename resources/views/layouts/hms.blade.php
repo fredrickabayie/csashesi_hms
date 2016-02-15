@@ -2,29 +2,20 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="SuperFlat Responsive Admin Template">
-    <meta name="keywords" content="SuperFlat Admin, Admin, Template, Bootstrap">
-
-    <title>Dashboard</title>
-
-    {!! Html::style('vendors/bower_components/animate.css/animate.min.css') !!}
-    {!! Html::style('vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') !!}
-    {!! Html::style('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') !!}
-    {!! Html::style('css/app.min.css') !!}
+    {{--| HEAD |--}}
+    @include('includes.head')
 
 </head>
 
 <body>
 
 {{--| NAVIGATION BAR |--}}
-@include('layouts.navigation')
+<header id="header" class="clearfix" data-spy="affix" data-offset-top="65">
+    @include('includes.header')
+</header>
 
 {{--| SIDEBAR |--}}
-@include('layouts.sidebar')
+@include('includes.sidebar')
 
 {{--| MAIN CONTENT |--}}
 <section id="content">
@@ -34,10 +25,12 @@
 </section>
 
 {{--| FOOTER |--}}
-@include('layouts.footer')
+<footer id="footer">
+    @include('includes.footer')
+</footer>
 
 
-        <!-- Javascript Libraries -->
+<!-- Javascript Libraries -->
 {!! Html::script('vendors/bower_components/jquery/dist/jquery.min.js') !!}
 {!! Html::script('vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') !!}
 {!! Html::script('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
