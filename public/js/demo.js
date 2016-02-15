@@ -1,3 +1,4 @@
+/*global $, document*/
 $(document).ready(function () {
 
     /* --------------------------------------------------------
@@ -24,7 +25,7 @@ $(document).ready(function () {
             spacing: 10,
             z_index: 1031,
             delay: 2500,
-            timer: 1000,
+            timer: 2000,
             url_target: '_blank',
             mouse_over: false,
             animate: {
@@ -48,7 +49,7 @@ $(document).ready(function () {
     /* --------------------------------------------------------
      Welcome Message
      -----------------------------------------------------------*/
-    notify('top', 'right', '', 'inverse', 'animated fadeIn', 'animated fadeOut', 'Welcome back ', 'Mallinda Hollaway!');
+    notify('top', 'right', '', 'inverse', 'animated bounceIn', 'animated bounceOut', 'Welcome back ', 'Fredrick Abayie!');
 
     /* --------------------------------------------------------
      Animations
