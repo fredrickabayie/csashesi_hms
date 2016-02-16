@@ -15,13 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/profile', function () {
-//   return View::make('profile');
-//});
-//
-//Route::group(['middleware' => 'web'], function () {
-//   Route::auth();
-//
+//Route::get('/register', function () {
+//   return View::make('auth.register');
 //});
 
 
