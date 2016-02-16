@@ -14,9 +14,9 @@ class UsersTableSeeder extends Seeder
     {
         //Insert data in users table
         User::create([
-            'name' => 'Kenneth Mensah',
-            'email' => 'kenneth.mensah@ashesi.edu.gh',
-            'password' => bcrypt('csashesi_')
+            'name' => 'Fredrick Abayie',
+            'email' => 'fredrick.abayie@ashesi.edu.gh',
+            'password' => bcrypt('csashesi_hms')
         ]);
     }
 }
