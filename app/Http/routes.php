@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::get('/profile', function () {
+//   return View::make('profile');
+//});
+//
+//Route::group(['middleware' => 'web'], function () {
+//   Route::auth();
+//
+//});
+
 
 
 /*
@@ -36,4 +45,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
+
+    Route::get('/profile', 'HomeController@profile');
 });

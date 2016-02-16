@@ -37,6 +37,7 @@
 {!! Html::script('vendors/sparklines/jquery.sparkline.min.js') !!}
 {!! Html::script('vendors/bootstrap-growl/bootstrap-growl.min.js') !!}
 {!! Html::script('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
+{!! Html::script('vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') !!}
 {!! Html::script('vendors/bower_components/moment/min/moment.min.js') !!}
 {!! Html::script('js/functions.js') !!}
 {!! Html::script('js/demo.js') !!}

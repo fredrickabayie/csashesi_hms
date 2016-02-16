@@ -1,5 +1,6 @@
 @extends('layouts.hms')
 
+{{--| CONTENT |--}}
 @section('content')
     <header class="page-header">
         <h3>Dashboard

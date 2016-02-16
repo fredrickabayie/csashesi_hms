@@ -14,7 +14,7 @@
             </a>
 
             <ul>
-                <li><a href="">View Profile</a></li>
+                <li><a href="{{ url('/profile') }}">View Profile</a></li>
                 <li><a href="{{ url('/logout') }}">Logout</a></li>
             </ul>
         </li>

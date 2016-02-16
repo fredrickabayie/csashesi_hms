@@ -16,8 +16,10 @@
 
 </head>
 
+{{--| BODY |--}}
 <body class="login-content">
 
+{{--| CONTENT |--}}
 @yield('content')
 
 {{--Scripts--}}

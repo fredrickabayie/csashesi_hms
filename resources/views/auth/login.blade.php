@@ -4,7 +4,9 @@
 
         <!-- Login Form -->
 <div class="lc-block toggled" id="l-login">
-    <div class="lcb-float"><i class="zmdi zmdi-pin-account c-blue"></i></div>
+    <div class="lcb-float animated zoomInDown">
+        <i class="zmdi zmdi-pin-account c-blue"></i>
+    </div>
 
     {!! Form::open(['url' => '/login', 'method' => 'post']) !!}
 
@@ -12,7 +14,7 @@
 
     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 
-        {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+        {!! Form::email('email', null, ['class' => 'form-control c-black', 'placeholder' => 'Email']) !!}
 
         @if ($errors->has('email'))
             <span class="help-block">
@@ -24,7 +26,7 @@
 
     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 
-        {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) !!}
+        {!! Form::password('password', ['class' => 'form-control c-black', 'placeholder' => 'Password']) !!}
 
         @if ($errors->has('password'))
             <span class="help-block">
@@ -46,11 +48,11 @@
         </div>
     </div>
 
-    {!! Form::submit('Sign In', ['class' => 'btn btn-block btn-success btn-float m-t-25']) !!}
+    {!! Form::submit('Sign In', ['class' => 'btn btn-block btn-primary btn-float m-t-25']) !!}
     {!! Form::close() !!}
 
     <ul class="login-navigation">
-        <li href="{{ url('/password/reset') }}" data-block="#l-forget-password" class="bg-red animated zoomInUp">Forgot Your Password?
+        <li href="{{ url('/password/reset') }}" data-block="#l-forget-password" class="bg-red animated bounce">Forgot Your Password?
         </li>
     </ul>
 
