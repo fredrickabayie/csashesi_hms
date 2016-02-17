@@ -21,7 +21,6 @@ class CreatePatientsDetailsTable extends Migration
             $table->date('birthday');
             $table->string('phone');
             $table->string('address');
-            $table->text('summary')->nullable();
             $table->timestamps();
             $table->foreign('patient_id')->references('id')->on('patients')->onDelete('cascade');
             $table->foreign('gender_id')->references('gender_id')->on('genders');
