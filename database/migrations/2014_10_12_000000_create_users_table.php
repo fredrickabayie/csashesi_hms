@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        //Drop users table in the table
+        //Drop users table in the database
         Schema::drop('users');
     }
 }

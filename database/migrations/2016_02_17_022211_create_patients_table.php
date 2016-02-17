@@ -17,7 +17,6 @@ class CreatePatientsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -29,7 +28,7 @@ class CreatePatientsTable extends Migration
      */
     public function down()
     {
-        //Drop patients table in the table
+        //Drop patients table in the database
         Schema::drop('patients');
     }
 }
