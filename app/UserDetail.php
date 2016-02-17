@@ -31,4 +31,24 @@ class UserDetail extends Model
     {
         return $this->belongsTo('Hms\User');
     }
+
+    /**
+ * Get the gender associated with the detail
+ *
+ * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+ */
+    public function gender()
+    {
+        return $this->hasOne('Hms\Gender', 'gender_id');
+    }
+
+    /**
+     * Get the gender associated with the detail
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function maritalStatus()
+    {
+        return $this->hasOne('Hms\MaritalStatus', 'status_id');
+    }
 }
