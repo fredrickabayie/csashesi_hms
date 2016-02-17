@@ -4,14 +4,14 @@ namespace Hms;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserDetail extends Model
+class PatientDetail extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'users_details';
+    protected $table = 'patients_details';
 
     /**
      * The attributes that are mass assignable.
@@ -19,17 +19,17 @@ class UserDetail extends Model
      * @var array
      */
     protected $fillable = [
-        'user', 'gender', 'marital_status', 'birthday', 'phone', 'address', 'summary',
+        'user', 'gender', 'marital_status', 'birthday', 'phone', 'address',
     ];
 
     /**
-     * Get the user associated with the details
+     * Get the patient associated with the details
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user()
+    public function patient()
     {
-        return $this->belongsTo('Hms\User');
+        return $this->belongsTo('Hms\Patient');
     }
 
     /**

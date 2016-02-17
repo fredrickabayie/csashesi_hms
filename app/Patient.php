@@ -22,4 +22,14 @@ class Patient extends Model
     protected $fillable = [
         'name', 'email'
     ];
+
+    /**
+     * Get the detail associated with the patient
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function patientDetail()
+    {
+        return $this->hasOne('Hms\PatientDetail');
+    }
 }

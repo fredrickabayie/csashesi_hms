@@ -1,5 +1,5 @@
 {{--| FOOTER |--}}
-Copyright © 2016 CSASHESI HMS
+Copyright © {{ date('Y') }} CSASHESI HMS
 
 <ul class="f-menu">
     <li><a href="">Home</a></li>

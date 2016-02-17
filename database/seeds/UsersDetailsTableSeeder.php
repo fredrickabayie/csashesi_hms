@@ -17,7 +17,7 @@ class UsersDetailsTableSeeder extends Seeder
             'user_id' => '1',
             'gender_id' => '1',
             'status_id' => '1',
-            'birthday' => '1992/10/110',
+            'birthday' => date('1994-05-2'),
             'phone' => '0209339957',
             'address' => '1 University Avenue, PMB CT3, Cantonments, Accra Ghana',
             'summary' => 'A passionate worker who puts patients needs first before others. Life is precious.',
