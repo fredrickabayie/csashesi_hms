@@ -4,7 +4,7 @@
 @section('content')
     <header class="page-header">
         <h3>Dashboard
-            <small>Statistics for this month</small>
+            <small>Statistic of hospital</small>
         </h3>
     </header>
 @endsection

@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 //Route::get('/register', function () {
 //   return View::make('auth.register');
@@ -59,5 +59,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/home', 'HomeController@index');
 
-//    Route::get('/profile', 'HomeController@profile');
+    Route::get('/profile', 'HomeController@profile');
+
+    Route::get('/patient', 'PatientController@index');
 });

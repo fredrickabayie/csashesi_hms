@@ -27,9 +27,9 @@
         </li>
 
         <li>
-            <a href="">
+            <a href="{{ url('/patient') }}">
                 <i class="zmdi zmdi-format-underlined"></i>
-                <span>Typography<span class="label label-danger">New</span></span>
+                <span>Patient</span>
             </a>
         </li>
     </ul>
