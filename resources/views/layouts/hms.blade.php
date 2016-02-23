@@ -34,12 +34,25 @@
 {!! Html::script('vendors/bower_components/jquery/dist/jquery.min.js') !!}
 {!! Html::script('vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') !!}
 {!! Html::script('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
-{!! Html::script('vendors/sparklines/jquery.sparkline.min.js') !!}
+
 {!! Html::script('vendors/bootstrap-growl/bootstrap-growl.min.js') !!}
-{!! Html::script('vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid-override.min.js') !!}
+{!! Html::script('vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js') !!}
 {!! Html::script('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
-{!! Html::script('vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') !!}
+
 {!! Html::script('vendors/bower_components/moment/min/moment.min.js') !!}
+{!! Html::script('vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js') !!}
+{!! Html::script('vendors/bower_components/nouislider/distribute/jquery.nouislider.all.min.js') !!}
+{!! Html::script('vendors/bower_components/summernote/dist/summernote.min.js') !!}
+{!! Html::script('vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') !!}
+{!! Html::script('vendors/bower_components/typeahead.js/dist/typeahead.bundle.min.js') !!}
+{!! Html::script('vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid-override.min.js') !!}
+
+{!! Html::script('vendors/chosen_v1.4.2/chosen.jquery.min.js') !!}
+{!! Html::script('vendors/fileinput/fileinput.min.js') !!}
+{!! Html::script('vendors/input-mask/input-mask.min.js') !!}
+{!! Html::script('vendors/farbtastic/farbtastic.min.js') !!}
+{!! Html::script('vendors/sparklines/jquery.sparkline.min.js') !!}
+
 {!! Html::script('js/functions.js') !!}
 {!! Html::script('js/demo.js') !!}
 

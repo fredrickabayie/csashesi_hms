@@ -26,11 +26,16 @@
             </a>
         </li>
 
-        <li>
-            <a href="{{ url('/patient') }}">
+        <li class="sm-sub">
+            <a href="">
                 <i class="zmdi zmdi-format-underlined"></i>
                 <span>Patient</span>
             </a>
+
+            <ul>
+                <li><a href="{{ url('/addPatient') }}">Add Patient</a></li>
+                <li><a href="{{ url('/patient') }}">View Patient</a></li>
+            </ul>
         </li>
     </ul>
 

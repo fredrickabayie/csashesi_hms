@@ -10,6 +10,12 @@
 
 {!! Html::style('vendors/bower_components/animate.css/animate.min.css') !!}
 {!! Html::style('vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') !!}
+{!! Html::style('vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css') !!}
+{!! Html::style('vendors/bower_components/nouislider/distribute/jquery.nouislider.min.css') !!}
+{!! Html::style('vendors/bower_components/summernote/dist/summernote.css') !!}
+{!! Html::style('vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css') !!}
+{!! Html::style('vendors/farbtastic/farbtastic.css') !!}
+{!! Html::style('vendors/chosen_v1.4.2/chosen.min.css') !!}
 {!! Html::style('vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid.override.min.css') !!}
 {!! Html::style('vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') !!}
 {!! Html::style('css/app.min.css') !!}

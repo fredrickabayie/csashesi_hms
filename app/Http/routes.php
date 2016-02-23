@@ -62,4 +62,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/profile', 'HomeController@profile');
 
     Route::get('/patient', 'PatientController@index');
+
+    Route::get('/addPatient', 'PatientController@create');
+
+    Route::post('/add', 'PatientController@store');
 });

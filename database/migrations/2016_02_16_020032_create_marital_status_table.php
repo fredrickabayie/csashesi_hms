@@ -15,7 +15,7 @@ class CreateMaritalStatusTable extends Migration
         //Create marital status table in the database
         Schema::create('marital_status', function (Blueprint $table) {
             $table->increments('status_id');
-            $table->enum('status_type', ['Single', 'Married']);
+            $table->string('status_type', 10);
         });
     }
 

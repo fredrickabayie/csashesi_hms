@@ -16,9 +16,9 @@ class GenderTableSeeder extends Seeder
 
         //Insert data in genders table
         DB::table('genders')->insert([
-            ['gender_type' => '1'],
-            ['gender_type' => '2'],
-            ['gender_type' => '3']
+            ['gender_type' => 'Male'],
+            ['gender_type' => 'Female'],
+            ['gender_type' => 'Other']
         ]);
     }
 }

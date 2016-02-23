@@ -16,8 +16,8 @@ class MaritalStatusTableSeeder extends Seeder
 
         //Insert data in martial status table
         DB::table('marital_status')->insert([
-            ['status_type' => '1'],
-            ['status_type' => '2']
+            ['status_type' => 'Single'],
+            ['status_type' => 'Married']
         ]);
     }
 }

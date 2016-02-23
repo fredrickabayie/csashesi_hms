@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGendersTable extends Migration
+class CreateBloodGroupsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateGendersTable extends Migration
      */
     public function up()
     {
-        //Create gender table in the database
-        Schema::create('genders', function (Blueprint $table) {
-            $table->increments('gender_id');
-            $table->string('gender_type', 10);
+        //Create blood group table in database
+        Schema::create('blood_groups', function (Blueprint $table) {
+            $table->increments('blood_id');
+            $table->string('blood_type');
         });
     }
 
@@ -26,7 +26,7 @@ class CreateGendersTable extends Migration
      */
     public function down()
     {
-        //Drop gender table in the database
-        Schema::drop('genders');
+        //Drop blood group from the database
+        Schema::drop('blood_groups');
     }
 }

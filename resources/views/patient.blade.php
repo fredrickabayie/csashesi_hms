@@ -10,9 +10,9 @@
 
     <div class="tile">
         <div class="t-header">
-            <div class="th-title">Command Buttons
-                <small>Add Command Buttons to Table Rows to perform custom actions such as Edit, Delete, View etc.
-                </small>
+            <div class="th-title">List of Patients
+                {{--<small>Add Command Buttons to Table Rows to perform custom actions such as Edit, Delete, View etc.--}}
+                {{--</small>--}}
             </div>
         </div>
 
@@ -22,7 +22,7 @@
                 <th data-column-id="id" data-type="numeric">Patient ID</th>
                 <th data-column-id="sender">Patient Name</th>
                 <th data-column-id="received" data-order="desc">Patient Email</th>
-                <th data-column-id="commands" data-formatter="commands" data-sortable="false">Commands</th>
+                <th data-column-id="commands" data-formatter="commands" data-sortable="false">Actions</th>
             </tr>
             </thead>
             <tbody>

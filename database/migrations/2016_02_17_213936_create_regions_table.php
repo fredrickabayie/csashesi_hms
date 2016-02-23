@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGendersTable extends Migration
+class CreateRegionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateGendersTable extends Migration
      */
     public function up()
     {
-        //Create gender table in the database
-        Schema::create('genders', function (Blueprint $table) {
-            $table->increments('gender_id');
-            $table->string('gender_type', 10);
+        //Create regions table in database
+        Schema::create('regions', function (Blueprint $table) {
+            $table->increments('region_id');
+            $table->string('region_name');
         });
     }
 
@@ -26,7 +26,7 @@ class CreateGendersTable extends Migration
      */
     public function down()
     {
-        //Drop gender table in the database
-        Schema::drop('genders');
+        //Drop regions from the database
+        Schema::drop('regions');
     }
 }

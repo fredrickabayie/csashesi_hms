@@ -3,6 +3,9 @@
 namespace Hms\Http\Controllers;
 
 use Hms\Patient as Patient;
+use Hms\Gender as Gender;
+use Hms\MaritalStatus as MaritalStatus;
+
 use Illuminate\Http\Request;
 
 use Hms\Http\Requests;
@@ -39,7 +42,13 @@ class PatientController extends Controller
      */
     public function create()
     {
+        $gender = Gender::all();
+        $maritalStatus = MaritalStatus::all();
 
+        return view('addPatient', [
+            'genders' => $gender,
+            'maritalStatus' => $maritalStatus
+        ]);
     }
 
     /**
@@ -50,7 +59,11 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        dd($request);
+        $patient = new Patient();
+        $patient->name = $request->fullName;
+        $patient->email = $request->email;
+        $patient->save();
     }
 
     /**
